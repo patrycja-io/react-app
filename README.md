@@ -22,6 +22,7 @@ Those colours are taken from original Igloo website - picked by chrome extenstio
 
 ## Usage
 ```
+cd tax-calc 
 npm install
 
 # Run on http://localhost:3000
