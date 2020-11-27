@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from './components/Header';
 import { Balance } from './components/Balance';
 import { IncomeExpenses } from './components/IncomeTax';
-import { NewCalculation } from './components/Calculation';
+import { Calculation } from './components/Calculation';
 import { GlobalProvider } from './context/GlobalState';
 
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
     <GlobalProvider>
       <Header />
       <div className="container"> 
-      <NewCalculation />
+      <Calculation />
       <IncomeExpenses />
         <Balance />
       </div>
