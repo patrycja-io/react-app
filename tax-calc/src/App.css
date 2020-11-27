@@ -113,13 +113,6 @@ input[type='number'] {
   margin: 10px 0;
 }
 
-.list li.plus {
-  border-right: 5px solid #2ecc71;
-}
-
-.list li.minus {
-  border-right: 5px solid #c0392b;
-}
 
 
 .list li:hover .delete-btn {
