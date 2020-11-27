@@ -6,8 +6,16 @@ import { GlobalContext } from '../context/GlobalState';
 export const IncomeExpenses = () => {
   const { annualIncome } = useContext(GlobalContext);
 
-  
+  const amounts = annualIncome.map(annualIncome => annualIncome.amount);
 
+  const income = amounts
+    .filter(item => item > 0)
+    .reduce((acc, item) => (acc += item), 0)
+    .toFixed(2) ;
+
+  const expense = (
+    amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) 
+  ).toFixed(2);
   
 
   return (
